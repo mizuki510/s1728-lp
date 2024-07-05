@@ -286,7 +286,7 @@ ul {
 
     /* home */
     #home {
-        background-image: url(../images/header-sp.jpg);
+        background-image: url("https://github.com/mizuki510/s1728-lp/blob/main/images/header-sp.jpg?raw=true");
         background-size: cover;
         background-position: center;
         min-height: 80vh;
