@@ -278,7 +278,9 @@ ul {
     }
 
     /* header */
-
+　  .page-header {
+        flex-direction: column;
+    }
     .main-nav {
         font-size: 0.8rem;
         margin: 45px;
