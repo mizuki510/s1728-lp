@@ -73,6 +73,7 @@ header {
     background-image: url("https://github.com/mizuki510/s1728-lp/blob/main/images/header-bg.png?raw=true");
     background-size: cover;
     width: 100%
+    height: 100vh;
 }
 
 #home .page-title {
