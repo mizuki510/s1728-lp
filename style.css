@@ -53,28 +53,32 @@ header {
 /* home */
 .home-content {
     text-align: end;
-    margin: 150px 70px 150px 200px;
     font-size: 3rem;
     color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 15%;
     text-shadow: 1px 2px 3px #808080;
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    
 }
 .home-content p {
     font-size: 1.7rem;
     margin: 3px 20 42px;
 }
 /* 見出し */
-#home .page-title {
+.page-title {
     font-size: 5rem;
     font-family: 'Philosopher', serif;
     text-transform: uppercase;
     font-weight: normal;
+    margin: 
 }
-#home {
-    background-image: url(../images/header-bg.png);
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-}
+
+
 
 #home .page-title {
     text-transform: none;
@@ -108,7 +112,7 @@ ul concept {
 }
 .box1 p {
     text-align: center;
-    padding: 30px;
+    padding: 30px 30px;
     font-size: 1rem;
     margin-bottom: 70px;
 }
@@ -135,7 +139,7 @@ footer p {
     font-weight: bold;
     border: solid 7px #E8D8BA;
     width: 600px;
-    height: 650px;
+    height: 700px;
 }
 
 .menu {
@@ -193,13 +197,13 @@ ul {
 .stylist-img h2 {
 
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
     font-size: 2rem;
     font-family: serif;
 }
 .stylist-img p {
     text-align: center;
-    padding: 30px;
+    padding: 10%;
     font-size: 1rem;
     margin-bottom: 70px;
 }
@@ -282,24 +286,33 @@ ul {
 
     .main-nav {
         font-size: 0.8rem;
-        margin: 0 0 0 5%;
         flex-direction: column;
+        margin: 0% 0 5% 0;
+
     }
     .page-header {
         flex-direction: column;
+        text-align: center;
     }
 
     /* home */
     #home {
-        background-image: url(../images/header-sp.jpg);
         background-size: cover;
         background-position: center;
     }
 
     .home-content {
         text-align: none;
-        text-align: center;
+        text-align: end;
+        width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        padding: 20% 5% 20% 0;
     }
+    .home-content p {
+        font-size: 1rem;
+    }
+
 
     /* concept */
 
@@ -309,9 +322,9 @@ ul {
         margin: 10% 20% 30% 5%;
     }
     .box1 {
-        margin: 12% 7% 10% 50%;
-        width        : 350px;
-        height       : 230px;
+        margin: 15% 7% 10% 60%;
+        width        : 200px;
+        height       : 200px;
         background   : #ffffff;
         box-shadow: 10px 10px 10px #808080;
     }
@@ -320,11 +333,12 @@ ul {
         text-align: center;
         font-size: 1.6rem;
         font-family: serif;
+        padding: 15% 3%;
     }
     .box1 p {
         text-align: center;
-        padding: 0 auto;
-        font-size: 0.8rem;
+        padding-top: 0;
+        font-size: 0.7rem;
     }
 
     /* menu */
@@ -334,7 +348,8 @@ ul {
         height: auto;
     }
     .menu {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: none;
     }
 
 
@@ -348,10 +363,16 @@ ul {
     }
     .box3 {
         position     : relative;
-        margin: 27% 7% 10% 90%;
+        margin: 50% 7% 30% 180%;
         box-shadow: 10px 10px 10px #808080;
-        width: 300px;
-        height: 230px;
+        width: 200px;
+        height: 200px;
+    }
+    .box3 h2{
+        font-size: 1.6rem;
+    }
+    .box3 p{
+        font-size: 0.7rem;
     }
     .grid {
         grid-template-columns: 1fr;
@@ -361,6 +382,8 @@ ul {
     .item img {
         width: 70%;
         height: auto;
+        justify-items: center;
+        align-items: center;
     }
     
     /* comments */
@@ -368,7 +391,7 @@ ul {
         text-align: center;
     }
     .box17 {
-        margin: 0 15% 0 0;
+        margin: 0 10% 0 0;
     }
 
 
