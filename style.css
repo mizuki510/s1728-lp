@@ -481,6 +481,23 @@ ul {
         height: auto;
     }
 
+    .concept-mdi {
+        display: block;
+    }
+    .concept-mdi p {
+        padding: 0 5%;
+    }
+
+    .concept img {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 5% 10%;
+    }
+    .box1 {
+        display: none;
+    }
+
     .box1 {
         display: none;
     }
