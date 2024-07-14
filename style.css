@@ -482,24 +482,9 @@ ul {
     }
 
     .box1 {
-        margin: 14% 7% 10% 60%;
-        width        : 150px;
-        height       : 140px;
-        background   : #ffffff;
-        box-shadow: 10px 10px 10px #808080;
+        display: none;
     }
     
-    .box1 h2 {        
-        text-align: center;
-        font-size: 1rem;
-        font-family: serif;
-        padding: 13% 3%;
-    }
-    .box1 p {
-        text-align: center0;
-        padding: 0 10%;
-        font-size: 0.6rem;
-    }
 
     .box2 {
         padding: 0.5em 1em;
@@ -542,18 +527,7 @@ ul {
         height: auto;
     }
     .box3 {
-        margin: 65px 50px 50px 250px;
-        width: 150px;
-        height: 150px;
-    }
-    .box3 h2{
-        font-size: 1rem;
-        text-align: center;
-        padding: 13% 3%;
-    }
-    .box3 p{
-        font-size: 0.7rem;
-        padding: 0 10%;
+        display: none;
     }
 
     #comments .page-title {
