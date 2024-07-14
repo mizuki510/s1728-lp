@@ -59,7 +59,7 @@ header {
     font-weight: normal;
     padding-top: 15%;
     text-shadow: 1px 2px 3px #808080;
-    background-image: url(https://github.com/mizuki510/s1728-lp/blob/main/images/header-bg.png?raw=true);
+    background-image: url(../images/header-bg.png);
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -88,8 +88,22 @@ header {
 ul concept {
     display: flex;
 }
+.concept-mdi {
+    display: none;
+    padding-top: 10%;
+}
+.concept-mdi h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: serif;
+}
+.concept-mdi p {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
 .concept-img img {
-    width: 650px;
+    width: min(650px,100%);
     height: auto;
     margin: 70px 0 30px 140px;
     position: absolute;
@@ -116,6 +130,8 @@ ul concept {
     font-size: 1rem;
     margin-bottom: 70px;
 }
+
+
 
 
 /* footer */
@@ -158,29 +174,35 @@ footer p {
     justify-content: space-between;
 }
 .menu dt {
-    display: table-cell;
-    padding:0.4rem;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .menu dd {
-    display: table-cell;
+    display: flex;
+    justify-content: space-between;
     padding:0.4rem;
-}
-.menu dd:after {
-    display: inline-block;
-    content: "";
-    width: 1em;
-    font-size: 0.7em;
-}
-.menu dd.from:after {
-    content: "〜";
 }
 
 /* stylist */
 ul {
     display: flex;
 }
+.stylist-mdi {
+    display: none;
+    padding-top: 10%;
+}
+.stylist-mdi h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: serif;
+}
+.stylist-mdi p {
+    text-align: center;
+    font-size: 0.7rem;
+}
 .stylist-img img {
-    width: 650px;
+    width: min(650px,100%);
     height: auto;
     margin: 30px 0 30px 150px;
     position: absolute;
@@ -188,15 +210,15 @@ ul {
 .box3 {
     margin       : 20% 50% 10% 200%;
     position     : relative;
-    width        : 350px;
+    width        : min(350px,100%);
     height       : 300px;
     background   : #ffffff;
     box-shadow: 10px 10px 10px #808080;
 }
 
 .stylist-img h2 {
-
     text-align: center;
+
     padding-top: 40px;
     font-size: 2rem;
     font-family: serif;
@@ -277,7 +299,7 @@ ul {
     padding: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .page-title {
         font-size: 2.5rem;
     }
@@ -315,69 +337,81 @@ ul {
 
 
     /* concept */
+    .concept {
+        display: block;
+    }
+    .concept-mdi {
+        display: block;
+    }
+    .concept-mdi p {
+        padding: 0 5%;
+    }
 
     .concept img {
         width: 80%;
         height: auto;
-        margin: 10% 20% 30% 5%;
+        text-align: center;
+        margin: 5% 10%;
     }
     .box1 {
-        margin: 15% 7% 10% 60%;
-        width        : 200px;
-        height       : 200px;
-        background   : #ffffff;
-        box-shadow: 10px 10px 10px #808080;
-    }
-    
-    .box1 h2 {        
-        text-align: center;
-        font-size: 1.6rem;
-        font-family: serif;
-        padding: 15% 3%;
-    }
-    .box1 p {
-        text-align: center;
-        padding-top: 0;
-        font-size: 0.7rem;
+        display: none;
     }
 
     /* menu */
+    #MENU {
+        padding: 55% 0 0% 0;
+    }
     .box2  {
         text-align: center;
         width: 70%;
         height: auto;
     }
     .menu {
-        font-size: 1rem;
+        font-size: 1.6rem;
         padding: none;
+    }
+    .menu dt {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+     
+    }
+    .menu dd {
+        display: flex;
+        justify-content: space-between;
+        padding:0.4rem;
+    }
+    .menu dl {
+        padding: 0%;
+        display: flex;
+        justify-content: space-between;
     }
 
 
     /* stylist */
+    .ul {
+        display: block;
+    }
+    .stylist-mdi {
+        display: block;
+        text-align: center;
+    }
 
     .stylist-img img {
+        margin: 5% 10%;
         width: 80%;
         height: auto;
-        margin: 10% 20% 10% 5%;
-        position: absolute;
+        text-align: center;
     }
+    
     .box3 {
-        position     : relative;
-        margin: 50% 7% 30% 180%;
-        box-shadow: 10px 10px 10px #808080;
-        width: 200px;
-        height: 200px;
-    }
-    .box3 h2{
-        font-size: 1.6rem;
-    }
-    .box3 p{
-        font-size: 0.7rem;
+        display: none;
     }
     .grid {
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        padding: 55% 0 0 0;
     }
     .img {
         width: 70%;
@@ -394,12 +428,150 @@ ul {
         margin: 0 10% 0 0;
     }
 
-
-
-
     footer wrapper {
         width: 100%;
     }
 
+}
 
+@media screen and (max-width: 480px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    /* header */
+
+    .main-nav {
+        font-size: 0.8rem;
+        flex-direction: column;
+        margin: 0% 0 5% 0;
+
+    }
+    .page-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* home */
+    #home {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home-content {
+        text-align: none;
+        text-align: end;
+        width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        padding: 20% 5% 20% 0;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+
+
+    /* concept */
+    ul .concept {
+        flex-direction: column;
+        text-align: center;
+    }
+    .concept img {
+        width: 80%;
+        height: auto;
+    }
+
+    .box1 {
+        margin: 14% 7% 10% 60%;
+        width        : 150px;
+        height       : 140px;
+        background   : #ffffff;
+        box-shadow: 10px 10px 10px #808080;
+    }
+    
+    .box1 h2 {        
+        text-align: center;
+        font-size: 1rem;
+        font-family: serif;
+        padding: 13% 3%;
+    }
+    .box1 p {
+        text-align: center0;
+        padding: 0 10%;
+        font-size: 0.6rem;
+    }
+
+    .box2 {
+        padding: 0.5em 1em;
+        margin: 30px auto;
+        font-weight: bold;
+        border: solid 7px #E8D8BA;
+        width: 80%;
+        height: 80%;
+    }
+    /* menu */
+    .menu {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 40px 0;
+    }
+    .menu h2 {
+        text-align: center;
+        font-family: serif;
+        font-size: 1.7rem;
+    }
+    .menu dl {
+        text-align: center;
+        display: block;
+    }
+    .menu dt {
+        text-align: center;
+    }
+    .menu dd {
+        display: column;
+        justify-content: space-between;
+        padding: 0%;
+        text-align: center;
+    }
+    
+ 
+    /* stylist */
+    .stylist-img {
+        width: 70%;
+        height: auto;
+    }
+    .box3 {
+        margin: 65px 50px 50px 250px;
+        width: 150px;
+        height: 150px;
+    }
+    .box3 h2{
+        font-size: 1rem;
+        text-align: center;
+        padding: 13% 3%;
+    }
+    .box3 p{
+        font-size: 0.7rem;
+        padding: 0 10%;
+    }
+
+    #comments .page-title {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .box17 {
+        margin: 0;
+    }
+    .comments-img {
+        margin: 30px;
+        display: block;
+        text-align: center;
+    }
+    .c-img {
+        margin: 10%;
+    }
+}
+
+@media screen and (max-width: 1874px) {
 }
