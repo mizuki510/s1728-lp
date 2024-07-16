@@ -85,8 +85,9 @@ header {
 }
 
 /* concept */
-ul concept {
-    display: flex;
+.concept {
+    margin: 0 auto;
+    width: 770px;
 }
 .concept-mdi {
     display: none;
@@ -105,13 +106,13 @@ ul concept {
 .concept-img img {
     width: min(650px,100%);
     height: auto;
-    margin: 70px 0 30px 140px;
+    padding: 50px 0;
     position: absolute;
 }
 .box1 {
     position: relative;
 
-    margin       : 7% 0% 10% 55%;
+    margin       : 9% 0% 10% 55%;
     width        : 350px;
     height       : 300px;
     background   : #ffffff;
@@ -185,6 +186,10 @@ footer p {
 }
 
 /* stylist */
+.stylist {
+    margin: 0 auto;
+    width: 770px;
+}
 ul {
     display: flex;
 }
@@ -208,7 +213,7 @@ ul {
     position: absolute;
 }
 .box3 {
-    margin       : 20% 50% 10% 200%;
+    margin       : 15% 50% 10% 170%;
     position     : relative;
     width        : min(350px,100%);
     height       : 300px;
@@ -299,7 +304,7 @@ ul {
     padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 841px) {
     .page-title {
         font-size: 2.5rem;
     }
@@ -343,9 +348,7 @@ ul {
     .concept-mdi {
         display: block;
     }
-    .concept-mdi p {
-        padding: 0 5%;
-    }
+
 
     .concept img {
         width: 80%;
@@ -525,7 +528,7 @@ ul {
     }
     .menu dl {
         text-align: center;
-        display: block;
+        padding: 5px;
     }
     .menu dt {
         text-align: center;
