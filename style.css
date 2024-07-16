@@ -209,7 +209,7 @@ ul {
 .stylist-img img {
     width: min(650px,100%);
     height: auto;
-    margin: 30px 0 30px 150px;
+    margin: 0;
     position: absolute;
 }
 .box3 {
